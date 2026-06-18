@@ -1,0 +1,132 @@
+/* GTM SKU Image Fetcher Pro — Admin Styles */
+
+.gtmif-wrap { max-width: 1200px; }
+.gtmif-version {
+	font-size: 13px;
+	color: #888;
+	font-weight: normal;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+/* Tabs */
+.gtmif-tabs { margin-bottom: 0; }
+.gtmif-content { background: #fff; border: 1px solid #c3c4c7; border-top: none; padding: 24px 28px; }
+
+/* Status Banner */
+.gtmif-status-banner {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	padding: 16px 20px;
+	border-radius: 8px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	transition: background 0.3s;
+}
+.gtmif-status-idle     { background: #f0f0f1; border-color: #ddd; }
+.gtmif-status-running  { background: #f0f7ff; border-color: #72aee6; animation: gtmif-pulse 2s infinite; }
+.gtmif-status-paused   { background: #fff8e5; border-color: #f0c33c; }
+.gtmif-status-finished { background: #f0faf5; border-color: #68de7c; }
+
+@keyframes gtmif-pulse {
+	0%, 100% { box-shadow: 0 0 0 0 rgba(114,174,230,0.4); }
+	50%       { box-shadow: 0 0 0 6px rgba(114,174,230,0); }
+}
+
+.gtmif-status-icon { font-size: 28px; line-height: 1; }
+.gtmif-status-text { flex: 1; }
+.gtmif-status-text strong { font-size: 15px; display: block; margin-bottom: 2px; }
+.gtmif-status-text span   { color: #646970; font-size: 13px; }
+.gtmif-status-actions { display: flex; gap: 8px; }
+
+/* Progress bar */
+.gtmif-progress-wrap {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 24px;
+}
+.gtmif-progress-bar {
+	flex: 1;
+	height: 12px;
+	background: #ddd;
+	border-radius: 6px;
+	overflow: hidden;
+}
+.gtmif-progress-fill {
+	height: 100%;
+	background: linear-gradient(90deg, #0073aa, #00a0d2);
+	border-radius: 6px;
+	transition: width 0.6s ease;
+}
+.gtmif-progress-pct { font-weight: 600; color: #0073aa; min-width: 40px; }
+
+/* KPI Cards */
+.gtmif-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+	gap: 14px;
+	margin-bottom: 24px;
+}
+.gtmif-card {
+	border-radius: 8px;
+	padding: 18px 16px;
+	text-align: center;
+	border: 1px solid transparent;
+	transition: transform 0.15s;
+}
+.gtmif-card:hover { transform: translateY(-2px); }
+
+.gtmif-card-value {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 1;
+	margin-bottom: 6px;
+}
+.gtmif-card-label {
+	font-size: 12px;
+	color: #646970;
+	line-height: 1.3;
+}
+
+.gtmif-card-blue   { background: #f0f7ff; border-color: #c2dcf0; }
+.gtmif-card-blue   .gtmif-card-value { color: #0073aa; }
+.gtmif-card-orange { background: #fff5e6; border-color: #f0c078; }
+.gtmif-card-orange .gtmif-card-value { color: #d97706; }
+.gtmif-card-red    { background: #fdf2f2; border-color: #f5c6c6; }
+.gtmif-card-red    .gtmif-card-value { color: #d63638; }
+.gtmif-card-green  { background: #f0faf3; border-color: #a8dab5; }
+.gtmif-card-green  .gtmif-card-value { color: #1a7a3a; }
+.gtmif-card-purple { background: #f8f0ff; border-color: #c9b0e8; }
+.gtmif-card-purple .gtmif-card-value { color: #7c3aed; }
+.gtmif-card-gray   { background: #f6f7f7; border-color: #ddd; }
+.gtmif-card-gray   .gtmif-card-value { color: #50575e; }
+
+/* Meta info */
+.gtmif-meta { color: #646970; font-size: 13px; margin-bottom: 20px; }
+
+/* Queue box */
+.gtmif-queue-box {
+	background: #f6f7f7;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 20px 24px;
+	margin-top: 10px;
+}
+.gtmif-queue-box h2 { margin-top: 0; }
+.gtmif-queue-controls {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	flex-wrap: wrap;
+}
+.gtmif-queue-controls input[type="number"] {
+	width: 90px;
+}
+
+/* Settings form */
+.form-table th { width: 220px; }
+
+/* Logs table */
+.gtmif-wrap .widefat td { vertical-align: top; }
